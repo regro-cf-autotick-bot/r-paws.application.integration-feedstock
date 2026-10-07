@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r-paws.application.integration` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install r-paws.application.integration
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install r-paws.application.integration
 ```
 
-It is possible to list all of the versions of `r-paws.application.integration` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add r-paws.application.integration
+# for installing globally
+pixi global install r-paws.application.integration
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `r-paws.application.integration` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search r-paws.application.integration --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search r-paws.application.integration --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search r-paws.application.integration --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds r-paws.application.integration --channel conda-forge
 # List dependencies of `r-paws.application.integration`:
 mamba repoquery depends r-paws.application.integration --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
